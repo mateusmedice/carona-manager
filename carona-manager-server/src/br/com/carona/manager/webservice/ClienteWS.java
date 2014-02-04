@@ -1,4 +1,4 @@
-package br.com.server.test.webservice;
+package br.com.carona.manager.webservice;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
