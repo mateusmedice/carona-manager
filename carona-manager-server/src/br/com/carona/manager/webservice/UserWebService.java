@@ -6,7 +6,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 @Path("cliente")
-public class ClienteWS {
+public class UserWebService {
 
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
