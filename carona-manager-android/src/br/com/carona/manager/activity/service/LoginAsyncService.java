@@ -8,9 +8,9 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.protocol.BasicHttpContext;
 import org.apache.http.protocol.HttpContext;
 
-import br.com.carona.manager.activity.util.AbstractPartyuAsync;
+import br.com.carona.manager.activity.util.AbstractAsync;
 
-public abstract class LoginAsyncService extends AbstractPartyuAsync {
+public abstract class LoginAsyncService extends AbstractAsync {
 
 	protected abstract void onPostExecute(Object results);
 

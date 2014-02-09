@@ -1,7 +1,7 @@
 package br.com.carona.manager.activity;
 
 import br.com.carona.manager.activity.service.LoginAsyncService;
-import br.com.carona.manager.activity.util.AbstractPartyuAsync;
+import br.com.carona.manager.activity.util.AbstractAsync;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -28,7 +28,7 @@ public class LoginActivity extends Activity implements OnClickListener {
 
 	public void onClick(View view) {
 
-		AbstractPartyuAsync asyncUltil = new LoginAsyncService() {
+		AbstractAsync asyncUltil = new LoginAsyncService() {
 
 			@Override
 			protected void onPostExecute(Object results) {
