@@ -2,6 +2,8 @@ package br.com.carona.manager.model;
 
 import java.io.Serializable;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * 
  * 
@@ -9,6 +11,7 @@ import java.io.Serializable;
  * @author mateus.medice
  *
  */
+@XmlRootElement
 @SuppressWarnings("serial")
 public class City implements Serializable {
 
