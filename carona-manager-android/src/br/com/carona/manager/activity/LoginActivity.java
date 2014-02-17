@@ -35,7 +35,7 @@ public class LoginActivity extends Activity implements OnClickListener {
 				
 				if (results != null) {
 					EditText et = (EditText) findViewById(R.id.my_edit);
-
+					
 					et.setText(results.toString());
 				}
 
@@ -46,7 +46,7 @@ public class LoginActivity extends Activity implements OnClickListener {
 			}
 		};
 
-		asyncUltil.execute("http://localhost:8080/carona-manager-server/city/SP");
+		asyncUltil.execute("http://192.168.56.1:8080/carona-manager-server/city/cityByState/SP");
 
 	}
 
