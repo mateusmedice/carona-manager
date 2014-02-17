@@ -38,4 +38,10 @@ public class CityBusinessImpl implements CityBusiness {
 		return this.cityDAO.getByState(uf);
 	}
 
+	@Override
+	public List<City> getAllCities() {
+		
+		return this.cityDAO.getAllCities();
+	}
+
 }

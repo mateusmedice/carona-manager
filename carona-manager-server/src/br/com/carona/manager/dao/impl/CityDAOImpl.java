@@ -59,4 +59,37 @@ public class CityDAOImpl implements CityDAO {
 		return cities;
 	}
 	
+	/**
+	 * @see 
+	 */
+	@Override
+	public List<City> getAllCities() {
+
+		DB db = ConnectionUtil.getInstance().getMongoDB();
+		
+		DBCollection cityCollection = db.getCollection("city");
+		
+		BasicDBObject order = new BasicDBObject();
+		order.append("nome_tratado", 0);
+
+		DBCursor cursor = cityCollection.find().sort(order);
+		
+		List<City> cities = new ArrayList<City>();
+		
+		while (cursor.hasNext()) {
+			
+			City city = new City();
+			
+			DBObject currentCity = cursor.next();
+
+			city.setCodigo((Integer) currentCity.get("codigo"));
+			city.setNome((String) currentCity.get("nome"));
+			
+			cities.add(city);
+			
+		}
+		
+		return cities;
+	}
+	
 }

@@ -10,11 +10,17 @@ import br.com.carona.manager.business.impl.CityBusinessImpl;
 
 import com.google.gson.Gson;
 
+/**
+ * 
+ * 
+ * @author mateus.medice
+ *
+ */
 @Path("/city")
 public class CityWebService {
 	
 	@GET
-	@Path("/{uf}")
+	@Path("/cityByState/{uf}")
 	@Produces("application/json")
 	public String getCityByState(@PathParam("uf") String uf) {
 
@@ -23,5 +29,18 @@ public class CityWebService {
 		Gson gson = new Gson();
 		
 		return gson.toJson(cityBusiness.getByState(uf));
+	}	
+	
+	@GET
+	@Path("/getAll")
+	@Produces("application/json")
+	public String getAllCities() {
+
+		CityBusiness cityBusiness = new CityBusinessImpl();
+		
+		Gson gson = new Gson();
+		
+		return gson.toJson(cityBusiness.getAllCities());
 	}
+	
 }
