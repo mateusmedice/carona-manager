@@ -3,9 +3,7 @@ package br.com.carona.manager.model;
 import java.io.Serializable;
 
 /**
- * 
- * @author mateus.medice
- *
+ * Class to represent the collection Post.
  */
 public class Post implements Serializable {
 	
@@ -20,14 +18,6 @@ public class Post implements Serializable {
 	
 	private String userName;
 	
-	private String fromUF;
-	
-	private String fromCity;
-	
-	private String toUF;
-	
-	private String toCity;
-	
 	private String postTime;
 	
 	private String hour;
@@ -35,9 +25,23 @@ public class Post implements Serializable {
 	private String description;
 	
 	private String contact;
+
+	private City fromCity;
 	
+	private City toCity;
+	
+	/**
+	 * Default Constructor
+	 */
 	public Post() {
-		
+
+		if (this.fromCity == null) {
+			this.fromCity = new City();
+		}
+
+		if (this.toCity == null) {
+			this.toCity = new City();
+		}
 	}
 
 	/**
@@ -80,62 +84,6 @@ public class Post implements Serializable {
 	 */
 	public void setUserName(String userName) {
 		this.userName = userName;
-	}
-
-	/**
-	 * @return the fromUF
-	 */
-	public String getFromUF() {
-		return fromUF;
-	}
-
-	/**
-	 * @param fromUF the fromUF to set
-	 */
-	public void setFromUF(String fromUF) {
-		this.fromUF = fromUF;
-	}
-
-	/**
-	 * @return the fromCity
-	 */
-	public String getFromCity() {
-		return fromCity;
-	}
-
-	/**
-	 * @param fromCity the fromCity to set
-	 */
-	public void setFromCity(String fromCity) {
-		this.fromCity = fromCity;
-	}
-
-	/**
-	 * @return the toUF
-	 */
-	public String getToUF() {
-		return toUF;
-	}
-
-	/**
-	 * @param toUF the toUF to set
-	 */
-	public void setToUF(String toUF) {
-		this.toUF = toUF;
-	}
-
-	/**
-	 * @return the toCity
-	 */
-	public String getToCity() {
-		return toCity;
-	}
-
-	/**
-	 * @param toCity the toCity to set
-	 */
-	public void setToCity(String toCity) {
-		this.toCity = toCity;
 	}
 
 	/**
@@ -192,6 +140,34 @@ public class Post implements Serializable {
 	 */
 	public void setContact(String contact) {
 		this.contact = contact;
+	}
+
+	/**
+	 * @return the fromCity
+	 */
+	public City getFromCity() {
+		return fromCity;
+	}
+
+	/**
+	 * @param fromCity the fromCity to set
+	 */
+	public void setFromCity(City fromCity) {
+		this.fromCity = fromCity;
+	}
+
+	/**
+	 * @return the toCity
+	 */
+	public City getToCity() {
+		return toCity;
+	}
+
+	/**
+	 * @param toCity the toCity to set
+	 */
+	public void setToCity(City toCity) {
+		this.toCity = toCity;
 	}
 	
 }

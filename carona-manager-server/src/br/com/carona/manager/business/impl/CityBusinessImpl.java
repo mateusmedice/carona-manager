@@ -8,16 +8,14 @@ import br.com.carona.manager.dao.impl.CityDAOImpl;
 import br.com.carona.manager.model.City;
 
 /**
- * 
- * @author Discover Technology
- *
+ * Implementation of CityBusiness.
  */
 public class CityBusinessImpl implements CityBusiness {
 
 	private CityDAO cityDAO;
 	
 	/**
-	 * Construtor Padrão
+	 * Default Constructor
 	 */
 	public CityBusinessImpl() {
 		if (this.cityDAO == null) {
@@ -26,7 +24,7 @@ public class CityBusinessImpl implements CityBusiness {
 	}
 	
 	/**
-	 * @see 
+	 * @see br.com.carona.manager.business.CityBusiness#getByState(String)
 	 */
 	@Override
 	public List<City> getByState(String uf) {
@@ -36,12 +34,6 @@ public class CityBusinessImpl implements CityBusiness {
 		}
 		
 		return this.cityDAO.getByState(uf);
-	}
-
-	@Override
-	public List<City> getAllCities() {
-		
-		return this.cityDAO.getAllCities();
 	}
 
 }

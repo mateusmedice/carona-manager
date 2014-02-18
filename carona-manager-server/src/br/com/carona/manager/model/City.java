@@ -2,16 +2,9 @@ package br.com.carona.manager.model;
 
 import java.io.Serializable;
 
-import javax.xml.bind.annotation.XmlRootElement;
-
 /**
- * 
- * 
- * 
- * @author mateus.medice
- *
+ * Class to represent the collection City.
  */
-@XmlRootElement
 @SuppressWarnings("serial")
 public class City implements Serializable {
 
@@ -28,7 +21,7 @@ public class City implements Serializable {
 	private Integer capital;
 	
 	/**
-	 * Construtor Padrão
+	 * Default Constructor
 	 */
 	public City() {
 		
