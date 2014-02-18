@@ -2,3 +2,5 @@
 /carona-manager-server/build
 /carona-manager-server/build
 /carona-manager-server/build
+/carona-manager-android/.settings/*.prefs
+/carona-manager-server/*.classpath
