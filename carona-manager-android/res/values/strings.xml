@@ -5,5 +5,8 @@
     <string name="action_settings">Configurações</string>
     <string name="hello_world">Hello world!</string>
     <string name="btnCallService">Call RESTFul Service</string>
+    <string name="title_activity_sobre">SobreActivity</string>
+    <string name="title_activity_buscar">BuscarActivity</string>
+    <string name="title_activity_oferecer">OferecerActivity</string>
 
 </resources>

@@ -1,14 +1,17 @@
 package br.com.carona.manager.activity;
 
+
 import br.com.carona.manager.activity.service.LoginAsyncService;
 import br.com.carona.manager.activity.util.AbstractAsync;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class LoginActivity extends Activity implements OnClickListener {
 
@@ -17,6 +20,18 @@ public class LoginActivity extends Activity implements OnClickListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		findViewById(R.id.my_button).setOnClickListener(this);
+		
+		Button b = (Button) findViewById(R.id.my_button);
+		b.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Toast.makeText(LoginActivity.this, "Teste!", Toast.LENGTH_LONG).show();
+
+				Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+				startActivity(intent);
+			}
+		});
 	}
 
 	@Override
@@ -28,7 +43,7 @@ public class LoginActivity extends Activity implements OnClickListener {
 
 	public void onClick(View view) {
 
-		AbstractAsync asyncUltil = new LoginAsyncService() {
+		/*AbstractAsync asyncUltil = new LoginAsyncService() {
 
 			@Override
 			protected void onPostExecute(Object results) {
@@ -39,14 +54,14 @@ public class LoginActivity extends Activity implements OnClickListener {
 					et.setText(results.toString());
 				}
 
-				Button b = (Button) findViewById(R.id.my_button);
+				
 
-				b.setClickable(true);
+				//b.setClickable(true);
 
 			}
 		};
 
-		asyncUltil.execute("http://192.168.56.1:8080/carona-manager-server/city/cityByState/SP");
+*/		//asyncUltil.execute("http://169.254.80.80:8080/carona-manager-server/city/cityByState/SP");
 
 	}
 

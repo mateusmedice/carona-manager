@@ -12,8 +12,26 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="vertical" >
+        
+        
+         <Button 
+           android:id="@+id/btnOferecer"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:text="Oferecer"/>
+    
+    <Button 
+           android:id="@+id/btnBuscar"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:text="Buscar"/>
+    
+    <Button 
+           android:id="@+id/btnSobre"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:text="Sobre"/>
 
- 
     </LinearLayout>
 
 </RelativeLayout>
