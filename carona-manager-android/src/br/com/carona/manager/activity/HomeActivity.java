@@ -1,5 +1,6 @@
 package br.com.carona.manager.activity;
 
+import br.com.carona.manager.activity.BuscarActivity;
 import br.com.carona.manager.activity.OferecerActivity;
 import br.com.carona.manager.activity.R;
 import android.app.Activity;
@@ -29,6 +30,31 @@ public class HomeActivity extends Activity {
 					startActivity(intent);
 				}
 			});
+		
+		Button BotaoBuscar = (Button) findViewById(R.id.btnBuscar);
+		BotaoBuscar.setOnClickListener(new OnClickListener() {
+
+				@Override
+				public void onClick(View v) {
+					Toast.makeText(HomeActivity.this, "Buscar!", Toast.LENGTH_LONG).show();
+
+					Intent intent = new Intent(HomeActivity.this, BuscarActivity.class);
+					startActivity(intent);
+				}
+			});
+		
+		Button BotaoSobre = (Button) findViewById(R.id.btnSobre);
+		BotaoSobre.setOnClickListener(new OnClickListener() {
+
+				@Override
+				public void onClick(View v) {
+					Toast.makeText(HomeActivity.this, "Sobre!", Toast.LENGTH_LONG).show();
+
+					Intent intent = new Intent(HomeActivity.this, BuscarActivity.class);
+					startActivity(intent);
+				}
+			});
+
 		
 	}
 

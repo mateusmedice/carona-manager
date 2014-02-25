@@ -8,5 +8,39 @@
     <string name="title_activity_sobre">SobreActivity</string>
     <string name="title_activity_buscar">BuscarActivity</string>
     <string name="title_activity_oferecer">OferecerActivity</string>
+    <string name="selectEstado">Escolha um Estado</string>
+    <string name="labelDe">De</string>
+    <string name="labelPara">Para</string>
+    <string name="labelUF">UF</string>
+    <string name="labelCity">Cidade</string>
+    <string-array name="estados_array">
+        <item>AC</item>
+        <item>AL</item>
+        <item>AM</item>
+        <item>AP</item>
+        <item>BA</item>
+        <item>CE</item>
+        <item>DF</item>
+        <item>ES</item>
+        <item>GO</item>
+        <item>MA</item>
+        <item>MT</item>
+        <item>MS</item>
+        <item>MG</item>
+        <item>PR</item>
+        <item>PB</item>
+        <item>PA</item>
+        <item>PE</item>
+        <item>PI</item>
+        <item>RJ</item>
+        <item>RN</item>
+        <item>RS</item>
+        <item>RO</item>
+        <item>RR</item>
+        <item>SC</item>
+        <item>SE</item>
+        <item>SP</item>
+        <item>TO</item>	
+    </string-array>
 
 </resources>
