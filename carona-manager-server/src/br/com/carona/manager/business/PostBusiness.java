@@ -19,5 +19,11 @@ public interface PostBusiness {
 	 * @return List of Post.
 	 */
 	List<Post> getPostBy(String ufFrom, String cityFrom, String ufTo, String cityTo);
-	
+
+	/**
+	 * Save the Post on.
+	 * 
+	 * @param post - Post
+	 */
+	void save(Post post);
 }

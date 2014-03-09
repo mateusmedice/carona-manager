@@ -1,4 +1,4 @@
-package br.com.carona.manager.model;
+package br.com.carona.manager.activity.model;
 
 import java.io.Serializable;
 

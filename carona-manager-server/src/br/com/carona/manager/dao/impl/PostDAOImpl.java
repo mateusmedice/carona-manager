@@ -60,4 +60,9 @@ public class PostDAOImpl implements PostDAO {
 		return posts;
 	}
 
+	@Override
+	public void save(Post post) {
+		
+	}
+
 }

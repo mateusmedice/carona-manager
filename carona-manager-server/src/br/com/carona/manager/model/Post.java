@@ -2,9 +2,12 @@ package br.com.carona.manager.model;
 
 import java.io.Serializable;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * Class to represent the collection Post.
  */
+@XmlRootElement
 public class Post implements Serializable {
 	
 	/**

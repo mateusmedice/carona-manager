@@ -34,4 +34,17 @@ public class PostBusinessImpl implements PostBusiness {
 		return this.postDAO.getPostBy(ufFrom, cityFrom, ufTo, cityTo);
 	}
 
+	/**
+	 * @see br.com.carona.manager.business.PostBusiness#save(Post)
+	 */
+	@Override
+	public void save(Post post) {
+		
+		if (post == null) {
+			throw new IllegalArgumentException("Post can't be null.");
+		}
+		
+		this.postDAO.save(post);
+	}
+
 }

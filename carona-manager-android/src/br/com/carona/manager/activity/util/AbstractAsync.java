@@ -18,7 +18,7 @@ import org.apache.http.protocol.BasicHttpContext;
 import org.apache.http.protocol.HttpContext;
 
 import android.os.AsyncTask;
-import br.com.carona.manager.model.Post;
+import br.com.carona.manager.activity.model.Post;
 
 public abstract class AbstractAsync extends AsyncTask<Object, Object, Object> {
 	
