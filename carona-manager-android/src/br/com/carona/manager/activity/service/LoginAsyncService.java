@@ -11,7 +11,7 @@ public abstract class LoginAsyncService extends AbstractAsync {
 		
 		try {
 			
-			return this.callWebservice(params[0].toString());
+			return this.callPostWebservice(params[0].toString(), params[1]);
 
 		} catch (Exception e) {
 			return e.getLocalizedMessage();
