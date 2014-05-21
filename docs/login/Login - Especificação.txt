@@ -1,7 +1,0 @@
-Login
-
-O login deverá ser realizado apenas com o usuário do Facebook.
-
-Se autenticado o usuário será direcionado para a página inicial. 
-
-Se não autenticado receberá uma mensagem de validação.
