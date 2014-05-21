@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" >
+	
+		    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/labelUF" />
+	
+	        <Spinner
+	            android:id="@+id/spinnerUfFromFind"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" />
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/labelCity" />
+	        
+	        <Spinner
+	            android:id="@+id/spinnerCityFromFind"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" />
+	    </LinearLayout>
+    	
+    	<LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/labelUF" />
+	
+	        <Spinner
+	            android:id="@+id/spinnerUfToFind"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"/>
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/labelCity" />
+	        
+	        <Spinner
+	            android:id="@+id/spinnerCityToFind"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"/>
+	    </LinearLayout>
+	    
+		<LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+			
+			<Button 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+			    android:id="@+id/btnSavePost"
+			    android:text="@string/seach"
+			    android:onClick="findPost" />
+		</LinearLayout>
+
+		<LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+			
+			<ListView 
+		    	android:id="@+id/postList"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content">	    
+			</ListView>
+	
+		</LinearLayout>
+			
+	</LinearLayout>
+
+</ScrollView>
+
+
+	
